@@ -1,0 +1,23 @@
+
+.wallet-index{
+    display: flex;
+  }
+  .trans-icon {
+    width: 35px;
+    justify-self: flex-end;
+  }
+  .label-circular-wlt-card{
+    width: max-content;
+    border-top: none;
+    border-right: none;
+    border-left: 3px solid whitesmoke;
+    border-bottom: 3px solid whitesmoke;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 2px;
+  }
+  .onclickcard{
+    border : 1px solid whitesmoke
+  }
+  

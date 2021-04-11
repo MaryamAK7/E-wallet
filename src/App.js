@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useContext} from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { ListWalletContext } from "./Context/ListWalletContext";
+import 'semantic-ui-css/semantic.min.css'
+import "bootstrap/dist/css/bootstrap.min.css";
+import 'animate.css/animate.css'
+import NoWallet from "./Pages/NoWalletPage/NoWalletPage";
+import Navbar from "./Components/Navbar/Navbar";
+import SingleWalletPage from "./Pages/SingleWalletPage/SingleWalletPage";
+import WalletsPage from './Pages/WalletsPage/WalletsPage';
 
-function App() {
+export default function App() {
+  const { WalletList } = useContext(ListWalletContext);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        
+              <Navbar />
+              <Route exact path="/E-Wallet/Nowallets/"> 
+                 <NoWallet />
+              </Route>
+              <Route exact path="/E-Wallet/"> 
+              {  
+              WalletList ? <NoWallet />  : <WalletsPage />
+              }
+              </Route>
+              <Route exact path="/E-Wallet/wallets/"> 
+                 <WalletsPage />
+              </Route>
+              <Route exact path = "/E-Wallet/SingleWalletPage/:name"> 
+                 <SingleWalletPage/> 
+              </Route>
+         
+      </div>
+    </Router>
   );
 }
-
-export default App;

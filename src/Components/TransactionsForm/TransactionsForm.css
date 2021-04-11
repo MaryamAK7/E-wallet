@@ -1,0 +1,55 @@
+.trans-form {
+    height: max-content;
+    width: 700px;
+    border-radius: 20px;
+    color: #3b3983;
+    margin: auto;
+    margin-top: 50px ;
+  }
+  .type-ctn{
+    display: flex;
+    flex-direction: row;
+  }
+  .grid-trans-form {
+    display: grid;
+    grid-gap: 10px;
+  }
+  
+  .inline-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .trans-form-inputs {
+    height: 48px;
+    background: transparent;
+    border: none;
+    border: 1px solid gray;
+    font-size: 18px;
+    padding: 0px 0px 0px 10px;
+    color: #3b3983;
+  }
+  .trans-form-inputs:focus {
+    outline: none;
+    border: 1px solid #13224f;
+    transition: 0.5s;
+  }
+  
+  .trans-form-input-amount {
+    width: 300px;
+  }
+  .exp-in{
+    color: #3b3983;
+  }
+
+  .btn-create-trans {
+    width: max-content;
+    padding: 15px;
+    background: transparent;
+    border: 1px solid gray;
+    color: #3b3983;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  

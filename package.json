@@ -1,4 +1,5 @@
 {
+  "homepage": "http://MaryamAk7.github.io/E-Wallet",
   "name": "e-wallet",
   "version": "0.1.0",
   "private": true,
@@ -9,9 +10,21 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.1"
+    "web-vitals": "^1.1.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "animate.css": "^4.1.1",
+    "animate.css-react": "^1.1.0",
+    "bootstrap": "^4.6.0",
+    "react-bootstrap": "^1.4.3",
+    "react-router-dom": "^5.2.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

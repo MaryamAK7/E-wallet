@@ -1,0 +1,43 @@
+.walletcard {
+    margin: 30px 50px;
+    height: 130px;
+    width: 250px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+ 
+  .lb-cd{
+    color: #3b3983 !important;
+  }
+  .label-trans-numb {
+    display: flex;
+    width: 250px;
+    padding: 10px 10px 0px 10px;
+    justify-content: space-between;
+  }
+  .wallet-name {  
+      text-decoration: none;
+      font-size: 30px;
+      padding-bottom: 0px;
+      margin-bottom: 10px;
+      color: white;
+      text-shadow: 2px 2px 8px #ffffffa8;
+  }
+  .wal-date{
+    font-size: small;
+  }
+  .wallet-name:hover {
+    text-decoration: none;
+  }
+  .icons-card {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px ;
+  }
+  

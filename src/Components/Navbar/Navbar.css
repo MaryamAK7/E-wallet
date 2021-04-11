@@ -23,14 +23,19 @@
   .wallet-name{
     width: fit-content;
     margin: auto; 
-    margin-left: 50px;
+    margin-right: 5px;
   }
-  /* .btn-color:hover {
-    color: rgba(255, 255, 255, 0.87);
-    transition: 0.3s;
-  } */
+
   .justify-content-between{
     display: flex;
     justify-content: space-between;
+  }
+  .coins-logo{
+    height: 30px;
+  }
+  .coins-logo-brand{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 5px;
   }
   

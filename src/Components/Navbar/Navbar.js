@@ -11,7 +11,7 @@ export default function NavBar() {
     <div className="navBar">
       <div>
         <div className="justify-content-between">
-          {WalletList.length === 0 ? <Link to='/E-Wallet/Nowallets/' style={{ color: 'white'}}> <h2 className='wallet-name'> B-Planner </h2> </Link> : <Link to='/E-Wallet/wallets/' style={{ color: 'white'}}> <h2> B-Planner </h2> </Link> }
+          {WalletList.length === 0 ? <Link to='/Nowallets/' style={{ color: 'white'}}> <h2 className='wallet-name'> B-Planner </h2> </Link> : <Link to='/wallets/' style={{ color: 'white'}}> <h2> B-Planner </h2> </Link> }
          
          <div>
           <button

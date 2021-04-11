@@ -47,7 +47,7 @@ export default function WalletsPage() {
                 
               </div>
               <Link
-               to={`/E-Wallet/SingleWalletPage/${item.walletName}`}
+               to={`/SingleWalletPage/${item.walletName}`}
                style={{ textDecoration: "none" }}
               >
               <div className="wallet-name-pg">

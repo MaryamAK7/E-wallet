@@ -16,18 +16,18 @@ export default function App() {
       <div className="App">
         
               <Navbar />
-              <Route exact path="/E-Wallet/Nowallets/"> 
+              <Route exact path="/Nowallets/"> 
                  <NoWallet />
               </Route>
-              <Route exact path="/E-Wallet/"> 
+              <Route exact path="/"> 
               {  
               WalletList ? <NoWallet />  : <WalletsPage />
               }
               </Route>
-              <Route exact path="/E-Wallet/wallets/"> 
+              <Route exact path="/wallets/"> 
                  <WalletsPage />
               </Route>
-              <Route exact path = "/E-Wallet/SingleWalletPage/:name"> 
+              <Route exact path = "/SingleWalletPage/:name"> 
                  <SingleWalletPage/> 
               </Route>
          

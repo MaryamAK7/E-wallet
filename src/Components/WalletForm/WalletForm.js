@@ -34,7 +34,7 @@ export default function WalletForm({ show, setShow, onHide }) {
     setShow(false);
     setBalance();
     setSelect("$");
-    history.push("/E-Wallet/wallets/");
+    history.push("/wallets/");
   };
   return (
     <div>

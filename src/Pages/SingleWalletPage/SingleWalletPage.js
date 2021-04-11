@@ -15,7 +15,7 @@ export default function SingleWallet() {
   },[WalletList,name,setChosenWallet])
 
    const handleClick = () => {
-      history.push('/E-Wallet/')
+      history.push('/')
    }
   return (
     <>

@@ -42,7 +42,7 @@ export default function WalletsPage() {
               <div className="label-trans-numb-pg">
                 <div className='wal-date'> {item.date} </div>
                 <Label circular basic size="big" className='lab' >
-                  {item.balance} {item.select}
+                  {item.totalBal} {item.select}
                 </Label>
                 
               </div>

@@ -5,7 +5,7 @@ import 'semantic-ui-css/semantic.min.css'
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'animate.css/animate.css'
 import NoWallet from "./Pages/NoWalletPage/NoWalletPage";
-import Navbar from "./Components/Navbar/Navbar";
+import Navbar from "./Components/NavBar/Navbar";
 import SingleWalletPage from "./Pages/SingleWalletPage/SingleWalletPage";
 import WalletsPage from './Pages/WalletsPage/WalletsPage';
 

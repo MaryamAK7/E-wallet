@@ -29,7 +29,7 @@ export default function WalletForm({ show, setShow, onHide }) {
   const onSubmit = (e) => {
     e.preventDefault();
     let d = new Date() ;
-    addWallet(3, [], walletName, parseInt(balance), 0, select, d.toDateString());
+    addWallet(3, [], walletName, parseInt(balance),  parseInt(balance), select, d.toDateString());
     setWalletName("");
     setShow(false);
     setBalance();

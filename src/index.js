@@ -1,16 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import ListWalletContextProvider from './Context/ListWalletContext'
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import ListWalletContextProvider from "./Context/ListWalletContext";
+import AuthProvider from "./Context/AuthContext";
 
 ReactDOM.render(
   <React.StrictMode>
     <ListWalletContextProvider>
-                <App />
+      <AuthProvider>
+        <App />
+      </AuthProvider>
     </ListWalletContextProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function

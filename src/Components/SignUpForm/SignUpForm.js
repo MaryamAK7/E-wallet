@@ -11,7 +11,7 @@ export default function SignUpForm() {
   const [verifPass, setVerifPass] = useState();
   const [error, setError] = useState();
   const [loading, setLoading] = useState(false);
-  const { currentUser, signUp } = useAuth();
+  const { signUp } = useAuth();
   const history = useHistory();
   async function handleSubmit(e) {
     e.preventDefault();

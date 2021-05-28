@@ -13,9 +13,12 @@ export default function AuthProvider({children}){
     function signUp (email, password){
         return auth.createUserWithEmailAndPassword(email, password)
     }
+    function signIn (email,password){
+        return auth.signInWithEmailAndPassword(email,password)
+    }
     return(
         <div> 
-        <AuthContext.Provider value={{currentUser, setCurrentUser, signUp }}>
+        <AuthContext.Provider value={{currentUser, setCurrentUser, signUp, signIn }}>
            {children}
         </AuthContext.Provider>
         </div>

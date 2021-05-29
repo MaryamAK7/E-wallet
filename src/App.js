@@ -12,6 +12,7 @@ import SignUpPage from "./Pages/SignUpPage/SignUpPage";
 import SignInPage from "./Pages/SignInPage/SignInPage";
 import ResetPassPage from "./Pages/ResetPassPage/ResetPassPage";
 import ProfilePage from "./Pages/ProfilePage/ProfilePage";
+import UpdateProfilePage from "./Pages/UpdateProfilePage/UpdateProfilePage";
 
 export default function App() {
   const { WalletList } = useContext(ListWalletContext);
@@ -42,6 +43,9 @@ export default function App() {
         </Route>
         <Route path="/profile">
           <ProfilePage />
+        </Route>
+        <Route path="/update-profile">
+          <UpdateProfilePage />
         </Route>
       </div>
     </Router>

@@ -1,0 +1,9 @@
+.updateProf-pg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.updateprof-hd{
+    margin: 50px auto !important;
+    width: fit-content;
+}

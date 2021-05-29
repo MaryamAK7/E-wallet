@@ -1,6 +1,6 @@
 .profilePage{
     width: 25%;
-    margin: 50px auto;
+    margin: 50px auto !important;
     display: flex;
     flex-direction: column;
 }

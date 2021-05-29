@@ -23,6 +23,13 @@ export default function NavBar() {
             >
             Add wallet
           </button>
+          <Link to='/sign-up'> 
+          <button
+            className="btn-color btn-prof "
+            >
+            Profile
+          </button>
+          </Link>
         </div> 
         </div>
       </div>

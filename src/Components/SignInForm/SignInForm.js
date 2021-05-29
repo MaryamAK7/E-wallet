@@ -17,8 +17,8 @@ async function handleSubmit(e){
   e.preventDefault();
   try{
     setLoading(true)
-    signIn(emailRef.current.value,passRef.current.value)
-    history.push('/wallets/')
+   await signIn(emailRef.current.value,passRef.current.value)
+    history.push('/profile')
   } catch{
     setError('sign in failed! please try again')
   }
@@ -40,7 +40,7 @@ async function handleSubmit(e){
         <Button variant="primary" type="submit" disabled={loading}>
           Sign In
         </Button>
-        <div><Link to='/forgot-password'> Forgot your password? </Link> </div>
+        <div><Link to='/reset-pass'> Forgot your password? </Link> </div>
         <div>Don't have an account? <Link to='/sign-up'>Sign Up</Link> </div> 
       </Form>
     </div>

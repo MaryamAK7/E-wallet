@@ -1,41 +1,45 @@
 .navBar {
-    background: #3b3983;
-    color: rgba(255, 255, 255, 0.89);
-    padding: 10px 10px;
-    height: 65px;
-    z-index: 10;
-  }
-  .home-btn{
-    font-size: medium;
-    margin: 15px;
-    color: white;
-  }
-  .btn-color {
-    background: transparent;
-    color: rgba(255, 255, 255, 0.89);
-    width: 150px;
-    height: 40px;
-    border: 1px solid rgba(255, 255, 255, 0.89);
-    border-radius: 30px;
-    font-size: 17px;
-    top: 20px;
-  }
-  .wallet-name{
-    width: fit-content;
-    margin: auto; 
-    margin-right: 5px;
-  }
-
-  .justify-content-between{
-    display: flex;
-    justify-content: space-between;
-  }
-  .coins-logo{
-    height: 30px;
-  }
-  .coins-logo-brand{
-    display: flex;
-    margin-left: 20px;
-    margin-top: 5px;
-  }
+  background: #3b3983;
+  color: rgba(255, 255, 255, 0.89);
+  padding: 10px 10px;
+  height: 65px;
+  z-index: 10;
+}
+.home-btn {
+  font-size: medium;
+  margin: 15px;
+  color: white;
+}
+.btn-color {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.89);
+  width: 150px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.89);
+  border-radius: 30px;
+  font-size: 17px;
+  top: 20px;
+  margin: 0px 5px;
+}
+.btn-prof {
   
+}
+
+.wallet-name {
+  width: fit-content;
+  margin: auto;
+  margin-right: 5px;
+}
+
+.justify-content-between {
+  display: flex;
+  justify-content: space-between;
+}
+.coins-logo {
+  height: 30px;
+}
+.coins-logo-brand {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 5px;
+}

@@ -13,7 +13,7 @@ export default function LogOutPage() {
         try{
             setError('')
            await signOut();
-           history.push('/login')
+           history.push('/sign-in')
             
         } catch{
             setError('something went wrong please try again!')
@@ -21,7 +21,7 @@ export default function LogOutPage() {
     }
     return (
         <div className='profilePage'> 
-            <h1>Profile</h1>
+            <h1 className='profile-hd'>Profile</h1>
             {error && <Alert>{error}</Alert>}
             <strong> Email:</strong> <span>{currentUser && currentUser.email}</span>
             <Link to='/update-profile' > Update Profile </Link>

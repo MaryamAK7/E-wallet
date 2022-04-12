@@ -1,16 +1,16 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import WalletForm from "../WalletForm/WalletForm";
 import "./Navbar.css";
 import coins from "./coins.png";
 import { Link } from "react-router-dom";
-import { ListWalletContext } from "../../Context/ListWalletContext";
+// import { ListWalletContext } from "../../Context/ListWalletContext";
 // import db from "../../Firebase";
 import { useAuth } from "../../Context/AuthContext";
 
 export default function NavBar() {
   const [modal, setModal] = useState(false);
   const [userIn, setUserIn] = useState("/sign-up");
-  const { WalletList } = useContext(ListWalletContext);
+  // const { WalletList } = useContext(ListWalletContext);
   const { currentUser } = useAuth();
   useEffect(() => {
     currentUser ? setUserIn("/profile") : setUserIn("/sign-up");
@@ -20,7 +20,7 @@ export default function NavBar() {
       <div>
         <div className="justify-content-between">
           <div className="coins-logo-brand">
-            {WalletList.length === 0 ? (
+            {!currentUser ? (
               <Link to="/Nowallets/" style={{ color: "white" }}>
                 {" "}
                 <h2 className="wallet-name"> B-Planner </h2>{" "}

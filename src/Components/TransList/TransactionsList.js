@@ -3,13 +3,12 @@ import wage from "./wage.png";
 import "./TransactionsList.css";
 import { ListWalletContext } from "../../Context/ListWalletContext";
 
-export default function TransactionsList({transaction, handleRemove}) {
-  const {chosenWallet } = useContext(ListWalletContext);
+export default function TransactionsList({ transaction, handleRemove }) {
+  const { chosenWallet } = useContext(ListWalletContext);
   let allTags = [];
-  
+  allTags = transaction.tagTrans.split(",");
   return (
     <div>
-      {(allTags = transaction.tagTrans.split(","))}
       <div
         className="trans-list note-trans-item-flex animate__animated animate__slideInDown animate__faster trans-list-div-parent"
         id={transaction.id}

@@ -110,7 +110,7 @@ function TransactionsForm() {
               <div onChange={handleType} className="type-ctn">
                 <div className="btn-color exp-in ">
                   {" "}
-                  <input type="radio" value="income" name="type" /> Income{" "}
+                  <input type="radio" value="income" name="type" checked="checked" /> Income{" "}
                 </div>
                 <div className="btn-color exp-in">
                   {" "}

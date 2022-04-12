@@ -5,6 +5,7 @@ const ListWalletContextProvider = (props) => {
   const [WalletList, setWalletList] = useState([]);
   const [chosenWallet, setChosenWallet] = useState({
     id: 0,
+    email: '',
     transactions: [],
     walletName: "",
     balance: 0,
@@ -15,6 +16,7 @@ const ListWalletContextProvider = (props) => {
 
   const addWallet = (
     id,
+    email,
     transactions,
     walletName,
     balance,
@@ -25,7 +27,7 @@ const ListWalletContextProvider = (props) => {
     id = WalletList.length;
     setWalletList([
       ...WalletList,
-      { id, transactions, walletName, balance, totalBal, select, date },
+      { id, email, transactions, walletName, balance, totalBal, select, date },
     ]);
   };
 

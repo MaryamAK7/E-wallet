@@ -3,10 +3,12 @@ import { useHistory } from "react-router-dom";
 import { ListWalletContext } from "../../Context/ListWalletContext";
 import { Modal } from "react-bootstrap";
 import "./WalletForm.css";
+import { useAuth } from "../../Context/AuthContext";
 
 export default function WalletForm({ show, setShow, onHide }) {
   let history = useHistory();
-  const { addWallet } = useContext(ListWalletContext);
+  let {currentUser} = useAuth();
+  const {WalletList, addWallet } = useContext(ListWalletContext);
 
   const opts = [
     { key: "$", value: "$", text: "Dollar $" },
@@ -29,12 +31,13 @@ export default function WalletForm({ show, setShow, onHide }) {
   const onSubmit = (e) => {
     e.preventDefault();
     let d = new Date() ;
-    addWallet(3, [], walletName, parseInt(balance),  parseInt(balance), select, d.toDateString());
+    addWallet(3,currentUser.email, [], walletName, parseInt(balance),  parseInt(balance), select, d.toDateString());
     setWalletName("");
     setShow(false);
     setBalance();
     setSelect("$");
     history.push("/wallets/");
+    console.log(WalletList)
   };
   return (
     <div>

@@ -1,4 +1,4 @@
-import React, {useContext, useState} from 'react'
+import React, {useContext, useEffect, useState} from 'react'
 import { ListWalletContext } from "../../Context/ListWalletContext";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,10 +8,13 @@ import WalletForm from '../../Components/WalletForm/WalletForm';
 import { useHistory } from "react-router-dom";
 
 import "./WalletsPage.css";
+import { useAuth } from '../../Context/AuthContext';
 export default function WalletsPage() {
     let history = useHistory();
     const { WalletList, removeWallet } = useContext(ListWalletContext);
     const [modal, setModal] = useState(false);
+    let [currentList, setCurrentList] = useState([]);
+    let {currentUser} = useAuth();
 
     const handleRemoveWallet = (id) => {
       removeWallet(id);
@@ -23,15 +26,18 @@ export default function WalletsPage() {
     const handleAddWallet = () =>{
         setModal(true);
     }
-    let step = 0;
+    useEffect(()=>{
+      currentUser ? setCurrentList(WalletList.filter( wallet => wallet.email === currentUser.email)) : setCurrentList([]);
+    },[WalletList, currentUser])
+    
     return (
         <div >
             <h1 className='walletsPage-hd'>Your Wallets</h1>
             <div className='walletsPage-cont'> 
             <div className='addWallet-outline' onClick={handleAddWallet}>
             </div>
-          {WalletList.map((item, index) => {
-        step > 1 ? (step = 0) : step++;
+          {currentList.map((item, index) => {
+        
         return (
           
             <div

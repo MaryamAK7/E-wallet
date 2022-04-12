@@ -4,7 +4,7 @@ import "./Navbar.css";
 import coins from "./coins.png";
 import { Link } from "react-router-dom";
 import { ListWalletContext } from "../../Context/ListWalletContext";
-import db from "../../Firebase";
+// import db from "../../Firebase";
 import { useAuth } from "../../Context/AuthContext";
 
 export default function NavBar() {
@@ -43,7 +43,7 @@ export default function NavBar() {
             </button>
 
             <Link to={userIn}>
-              <button className="btn-color btn-prof ">Profile</button>
+              <button className="btn-color btn-prof ">{currentUser? 'Profile' : 'Sign In/Up'}</button>
             </Link>
           </div>
         </div>

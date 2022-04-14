@@ -43,7 +43,7 @@ export default function WalletsPage() {
             <div
              className="walletcard-pg "
               style={{ backgroundColor: '#f0bf3b' }}
-              eventKey={index}
+              key={index}
             >
               <div className="label-trans-numb-pg">
                 <div className='wal-date'> {item.date} </div>

@@ -1,8 +1,9 @@
 import React, { createContext, useState } from "react";
+import useLocalStorage from "../useLocalStorage";
 
 export const ListWalletContext = createContext();
 const ListWalletContextProvider = (props) => {
-  const [WalletList, setWalletList] = useState([]);
+  const [WalletList, setWalletList] = useLocalStorage('WalletList', []);
   const [chosenWallet, setChosenWallet] = useState({
     id: 0,
     email: '',

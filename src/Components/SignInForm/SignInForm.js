@@ -30,18 +30,18 @@ async function handleSubmit(e){
        {error && <Alert variant='danger'> {error} </Alert> }
         <Form.Group controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" ref={emailRef} />
+          <Form.Control type="email" placeholder="Enter email" ref={emailRef} className='signIn-form-controle'/>
         </Form.Group>
 
         <Form.Group controlId="formBasicPassword">
           <Form.Label>Password</Form.Label>
-          <Form.Control type="password" placeholder="Password" ref={passRef} />
+          <Form.Control type="password" placeholder="Password" ref={passRef}  className='signIn-form-controle' />
         </Form.Group>
-        <Button variant="primary" type="submit" disabled={loading}>
+        <Button variant="primary" type="submit" disabled={loading} className = 'signIn-btn'>
           Sign In
         </Button>
-        <div><Link to='/reset-pass'> Forgot your password? </Link> </div>
-        <div>Don't have an account? <Link to='/sign-up'>Sign Up</Link> </div> 
+        <div><Link to='/reset-pass' className="forgotPassLink"> Forgot your password? </Link> </div>
+        <div>Don't have an account? <Link to='/sign-up' className="signUpLink">Sign Up</Link> </div> 
       </Form>
     </div>
   );

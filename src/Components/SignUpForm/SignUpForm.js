@@ -42,6 +42,7 @@ export default function SignUpForm() {
             type="email"
             placeholder="Enter email"
             onChange={(e) => setUserEmail(e.target.value)}
+            className = 'signUp-form-controle'
           />
           <Form.Text className="text-muted">
             We'll never share your email with anyone else.
@@ -54,6 +55,7 @@ export default function SignUpForm() {
             type="password"
             placeholder="Password"
             onChange={(e) => setUserPass(e.target.value)}
+            className = 'signUp-form-controle'
           />
         </Form.Group>
         <Form.Group controlId="formBasicPassword">
@@ -62,13 +64,14 @@ export default function SignUpForm() {
             type="password"
             placeholder="Confirm your Password"
             onChange={(e) => setVerifPass(e.target.value)}
+            className = 'signUp-form-controle'
           />
         </Form.Group>
-        <Button variant="primary" type="submit" disabled={loading}>
+        <Button variant="primary" type="submit" disabled={loading} className='signUpBtn'>
           Sign Up
         </Button>
         <div>
-          Already have an account? <Link to="/sign-in">Sign in</Link>
+          Already have an account? <Link to="/sign-in" className='signInLink'>Sign in</Link>
         </div>
       </Form>
     </div>

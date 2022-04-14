@@ -23,8 +23,9 @@ export default function LogOutPage() {
         <div className='profilePage'> 
             <h1 className='profile-hd'>Profile</h1>
             {error && <Alert>{error}</Alert>}
-            <strong> Email:</strong> <span>{currentUser && currentUser.email}</span>
-            <Link to='/update-profile' > Update Profile </Link>
+            <div> 
+            <strong> Email logged In :</strong> <span>{currentUser && currentUser.email}</span></div>
+            <Link to='/update-profile' className='profileLink' > Update Profile </Link>
             <Button onClick={handleClick} className='logOut-btn'>Sign Out</Button>
         </div>
     )

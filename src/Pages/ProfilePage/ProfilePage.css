@@ -1,13 +1,27 @@
 .profilePage{
     width: 25%;
     margin: 50px auto !important;
+    padding: 60px;
     display: flex;
     flex-direction: column;
-}
-.logOut-btn{
-    width: fit-content;
+    color: #3b3983;
 }
 .profile-hd{
     width: fit-content;
     margin: 50px auto;
+}
+.logOut-btn{
+    width: fit-content;
+    background-color: #f0bf3b;
+    border: none;
+    position: relative;
+    top:50px;
+    left: 150px;
+}
+.logOut-btn:hover {
+    background-color: #3b3983;
+    border: none;
+}
+.profileLink:hover{
+    color:#f0bf3b;
 }

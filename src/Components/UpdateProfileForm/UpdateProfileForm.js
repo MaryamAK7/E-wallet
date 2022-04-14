@@ -42,17 +42,17 @@ export default function UpdateProfileForm() {
           {error && <Alert variant='danger'>{error}</Alert>}
         <Form.Group controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" defaultValue={currentUser.email} ref={emailRef}/>
+          <Form.Control type="email" placeholder="Enter email" defaultValue={currentUser.email} ref={emailRef} className='updateFormControl'/>
         </Form.Group>
         <Form.Group controlId="formBasicPassword">
           <Form.Label>Password</Form.Label>
-          <Form.Control type="password" placeholder='Leave Blanck to keep the same' ref={passRef}/>
+          <Form.Control type="password" placeholder='Leave Blanck to keep the same' ref={passRef} className='updateFormControl'/>
         </Form.Group>
         <Form.Group controlId="formBasicPassword">
           <Form.Label>Confirm Password</Form.Label>
-          <Form.Control type="password" placeholder='Leave Blanck to keep the same' ref={passVerifRef} />
+          <Form.Control type="password" placeholder='Leave Blanck to keep the same' ref={passVerifRef} className='updateFormControl'/>
         </Form.Group>
-        <Button variant="primary" type="submit" disabled={loading}>
+        <Button variant="primary" type="submit" disabled={loading} className = 'updateBtn'>
           Update
         </Button>
         <Link to='/profile' className='cancel-btn'> <div >cancel</div> </Link>

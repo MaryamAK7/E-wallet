@@ -21,21 +21,21 @@ export default function NavBar() {
         <div className="justify-content-between">
           <div className="coins-logo-brand">
             {!currentUser ? (
-              <Link to="/Nowallets/" style={{ color: "white" }}>
+              <Link to="/Nowallets/" style={{ color: "rgb(30, 31, 119)" }}>
                 {" "}
                 <h2 className="wallet-name"> B-Planner </h2>{" "}
               </Link>
             ) : (
-              <Link to="/wallets/" style={{ color: "white" }}>
+              <Link to="/wallets/" style={{ color: "rgb(30, 31, 119)" }}>
                 {" "}
-                <h2> B-Planner </h2>{" "}
+                <h2 className="wallet-name"> B-Planner </h2>{" "}
               </Link>
             )}
             <img src={coins} alt="coins logo" className="coins-logo" />
           </div>
           <div>
             <button
-              className="btn-color addwallet-fixed"
+              className={currentUser ? "btn-color" : 'btn-color-dis'} 
               onClick={() => setModal(true)}
               disabled={currentUser ? false : true}
             >
@@ -43,7 +43,7 @@ export default function NavBar() {
             </button>
 
             <Link to={userIn}>
-              <button className="btn-color btn-prof ">{currentUser? 'Profile' : 'Sign In/Up'}</button>
+              <button className="btn-color">{currentUser? 'Profile' : 'Sign In/Up'}</button>
             </Link>
           </div>
         </div>

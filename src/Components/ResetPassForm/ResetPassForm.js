@@ -33,17 +33,17 @@ export default function ResetPassForm() {
         {message && <Alert variant="success">{message}</Alert>}
         <Form.Group controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" ref={emailRef} />
+          <Form.Control type="email" placeholder="Enter email" ref={emailRef} className ='resetPass-form-control' />
         </Form.Group>
-        <Button variant="primary" type="submit" disabled={loading}>
+        <Button variant="primary" type="submit" disabled={loading} className = 'resetPassBtn'>
           Reset Password
         </Button>
       </Form>
       <div>
-        <Link to="/sign-in"> Sign in </Link>{" "}
+        <Link to="/sign-in" className='resetLink'> Sign in </Link>{" "}
       </div>
       <div>
-        Need an account? <Link to="/sign-up">Sign up </Link>
+        Need an account? <Link to="/sign-up" className='resetLink'>Sign up </Link>
       </div>
     </div>
   );

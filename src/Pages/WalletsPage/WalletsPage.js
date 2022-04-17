@@ -26,7 +26,7 @@ export default function WalletsPage() {
     <div>
       <h1 className="walletsPage-hd">Your Wallets</h1>
       <div className="walletsPage-cont">
-        <div className="addWallet-outline" onClick={handleAddWallet}></div>
+        <div className="addWallet-outline" onClick={handleAddWallet}><div>+Add Wallet</div></div>
         {currentList.map((item, index) => {
           return <WalletCard item= {item} index = {index}/>;
         })}

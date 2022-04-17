@@ -60,3 +60,25 @@
   .trash:hover{
     cursor: pointer;
   }
+  .delete-wlt-btn-modal {
+    border: none;
+    border: 1px solid #f0bf3b;
+    color: #f0bf3b;
+    background-color: transparent;
+    width: fit-content;
+    height: 40px;
+    font-size: 14px;
+    margin-right: 15px ;
+  }
+  .delete-wlt-btn-modal:hover {
+    color: #3b3983;
+  }
+  .actionIrr{
+    font-size: small;
+    text-align: center;
+  }
+  .delText{
+    font-size: large;
+    text-align: center;
+    margin: 10px 0px;
+  }

@@ -5,14 +5,25 @@
     color: #3b3983;
 }
 .addWallet-outline{
-    background-image: url('../NoWalletPage/wallet2.jpeg');
-    background-size: contain;
-    border-radius: 10px;
+    /* background-image: url('../NoWalletPage/wallet2.jpeg'); */
+    /* background-size: contain; */
+    /* border-radius: 10px;
     background-repeat: no-repeat;
     background-position: center;
     height: 130px;
-    width: 250px;
+    width: 250px; */
     opacity: 0.5;
+    margin: 10px 0px;
+    height: 250px;
+    width: 200px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    color: #3b3983;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px dashed #3b3983; 
 
 }
 .addWallet-outline:hover{

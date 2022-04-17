@@ -17,6 +17,7 @@ export default function WalletForm({ show, setShow, onHide }) {
   const [walletName, setWalletName] = useState("");
   const [balance, setBalance] = useState('');
   const [select, setSelect] = useState('$');
+  const [message, setMessage] = useState("");
 
   const handleNameInput = (e) => {
     setWalletName(e.target.value);
@@ -27,17 +28,22 @@ export default function WalletForm({ show, setShow, onHide }) {
   const handleSelect = (e) => {
     setSelect(e.target.value);
   };
-
+  const isWalletUnique= (walletName) =>{
+    return WalletList.filter(wal => wal.walletName === walletName).length === 0
+  }
   const onSubmit = (e) => {
     e.preventDefault();
     let d = new Date() ;
+    if(isWalletUnique(walletName)){
     addWallet(3,currentUser.email, [], walletName, parseInt(balance),  parseInt(balance), select, d.toDateString());
     setWalletName("");
     setShow(false);
     setBalance();
     setSelect("$");
+    setMessage("")
     history.push("/wallets/");
-    console.log(WalletList)
+  } else { setMessage('wallet name already exist'); setShow(true);}
+    
   };
   return (
     <div>
@@ -73,6 +79,7 @@ export default function WalletForm({ show, setShow, onHide }) {
                     onChange={handleNameInput}
                     required
                   />
+                  {message}
                 </td>
               </tr>
 

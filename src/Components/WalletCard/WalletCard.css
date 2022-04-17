@@ -1,31 +1,31 @@
 .walletcard-pg {
-    margin: 10px 10px;
-    height: 130px;
-    width: 250px;
-    border-radius: 10px;
+    margin: 10px 0px;
+    height: 250px;
+    width: 200px;
+    border-radius: 30px;
     display: flex;
     align-items: center;
-    padding: 10px;
     font-size: 25px;
     color: white;
     flex-direction: column;
     justify-content: space-evenly;
+    background-color: #3b3983; 
   }
-  .walletcard:hover {
-    box-shadow: 2px;
-  }
-  .walletcard:focus {
-    filter: blur(10px);
+  .walletcard-pg:hover {
+    box-shadow: 0px 1px 1px hsla(0, 0%, 0%, 0.082) inset, 0px 0px 8px blue;
   }
   .label-trans-numb-pg {
     display: flex;
-    width: 250px;
-    padding: 10px 10px 0px 10px;
+    width: 200px;
+    padding: 0px 10px 0px 10px;
     justify-content: space-between;
+    align-items: center;
   }
   .wallet-name-pg {
     text-decoration: none;
     font-size: 30px;
+    width: 100%;
+    padding: 10px 50px ;
     margin-bottom: 10px;
     text-shadow: 2px 2px 8px #ffffffa8;
     color: white;
@@ -35,12 +35,28 @@
   }
   .icons-card {
     display: flex;
-    justify-content:left;
-    margin-bottom: 15px ;
+    width: 100%;
+    justify-content:space-between;
+    padding: 0px 15px ;
+    border-top: 1px solid #f0bf3b ;
   }
   .wal-date{
     font-size: small;
+    margin-right: 10px;
+    border-bottom: 1px solid #f0bf3b ;
+    padding-bottom: 5px;
   }
   .lab{
-    color: #3b3983 !important;
+    color: white;
+    margin-left: 5px;
+  }
+  .wal-ind{
+    width: 40px;
+    text-align: center;
+    margin-left: 10px;
+    border-radius: 50px;
+    border: 1px solid #f0bf3b ;
+  }
+  .trash:hover{
+    cursor: pointer;
   }

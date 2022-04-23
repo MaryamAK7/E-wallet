@@ -75,17 +75,10 @@ function TransactionsForm() {
     setTagTrans("");
   };
 
-  let headStyle = {
-    color: "#3b3983",
-    margin: "auto",
-    width: "50%",
-    marginTop: "20px",
-    display: "flex",
-    justifyContent: "space-between",
-  };
+  
   return (
     <>
-      <div style={headStyle} className="single-wallet-name">
+      <div className="single-wallet-name">
         <h1> {chosenWallet.walletName} </h1>
         <h4 style={{ paddingTop: "10px" }}>
           {" "}

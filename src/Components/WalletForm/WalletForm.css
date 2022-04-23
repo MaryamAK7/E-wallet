@@ -1,5 +1,5 @@
 .modal-bg-style {
-    color: #3b3983;
+    color: #004346;
     height: 600px;
   }
   .table-form-styling {
@@ -19,7 +19,7 @@
     border-bottom: 3px solid #f0bf3b;
     outline: none;
     padding-left: 4px;
-    color: #3b3983;
+    color: #004346;
     font-size: 17px;
   }
   .crte-wlt-inp-form:focus {
@@ -36,11 +36,11 @@
     font-size: 17px;
   }
   .create-wlt-btn-modal:hover {
-    color: #3b3983;
+    color: #004346;
   }
   .select-curr{ 
     border-color: #f0bf3b;
     padding: 5px;
-    color: #3b3983;
+    color: #004346;
   }
   

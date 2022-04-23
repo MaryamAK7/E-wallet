@@ -23,7 +23,7 @@ export default function WalletsPage() {
   }, [WalletList, currentUser]);
 
   return (
-    <div>
+    <div className="walletsPage">
       <h1 className="walletsPage-hd">Your Wallets</h1>
       <div className="walletsPage-cont">
         <div className="addWallet-outline" onClick={handleAddWallet}><div>+Add Wallet</div></div>

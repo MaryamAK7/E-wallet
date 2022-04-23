@@ -11,9 +11,12 @@
     border: none;
 }
 .updateBtn:hover{
-    background-color: #3b3983;
+    background-color: #004346;
     border: none;
 }
 .cancel-btn:hover{
-    color: #f0bf3b;
+    color: #f0bf3b !important;
+}
+.cancel-btn{
+    color: #75DDDD !important;
 }

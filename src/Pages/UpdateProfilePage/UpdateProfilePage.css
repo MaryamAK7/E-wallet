@@ -2,9 +2,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #3b3983;
+    color: white;
+    height: 100vh;
 }
 .updateprof-hd{
-    margin: 50px auto !important;
+    margin: 20px auto !important;
     width: fit-content;
+}
+.updateIcon{
+    width: 60px;
 }

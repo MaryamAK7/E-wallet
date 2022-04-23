@@ -21,12 +21,12 @@ export default function NavBar() {
         <div className="justify-content-between">
           <div className="coins-logo-brand">
             {!currentUser ? (
-              <Link to="/Nowallets/" style={{ color: "rgb(30, 31, 119)" }}>
+              <Link to="/Nowallets/" style={{ color: "white" }}>
                 {" "}
                 <h2 className="wallet-name"> B-Planner </h2>{" "}
               </Link>
             ) : (
-              <Link to="/wallets/" style={{ color: "rgb(30, 31, 119)" }}>
+              <Link to="/wallets/" style={{ color: "white" }}>
                 {" "}
                 <h2 className="wallet-name"> B-Planner </h2>{" "}
               </Link>

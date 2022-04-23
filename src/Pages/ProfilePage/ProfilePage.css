@@ -1,27 +1,52 @@
 .profilePage{
-    width: 25%;
+    
+    height: 100vh;
     margin: 50px auto !important;
     padding: 60px;
     display: flex;
     flex-direction: column;
-    color: #3b3983;
+    align-items: center;
+    color: white;
 }
 .profile-hd{
     width: fit-content;
-    margin: 50px auto;
+    margin: 10px auto 40px;
 }
 .logOut-btn{
     width: fit-content;
     background-color: #f0bf3b;
     border: none;
-    position: relative;
-    top:50px;
-    left: 150px;
+    margin: 10px auto;
 }
 .logOut-btn:hover {
-    background-color: #3b3983;
+    background-color: #004346;
     border: none;
 }
 .profileLink:hover{
-    color:#f0bf3b;
+    color:#f0bf3b !important;
+}
+.profileLink{
+    color: #75DDDD !important;
+}
+.profileBtns{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: flex-end;
+}
+.checkBtnDiv{
+    width: fit-content;
+    margin: 20px auto;
+}
+.checkBtn{
+    background-color: #f0bf3b;
+    border: none;
+    margin-left: 20px;
+}
+.checkBtn:hover {
+    background-color: #004346;
+    border: none;
+}
+.profileIcon{
+    width: 50px;
 }

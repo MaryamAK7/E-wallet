@@ -2,14 +2,14 @@
     
     width: 25%;
     margin: 50px auto;
-    color: #3b3983;
+    color: white;
 }
 .signUpBtn{
     background-color: #f0bf3b;
     border: none;
 }
 .signUpBtn:hover {
-    background-color: #3b3983;
+    background-color: #004346;
     border: none;
 }
 .signUp-form-controle:focus {
@@ -17,5 +17,8 @@
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px #f0bf3b;
 }
 .signInLink:hover{
-    color: #f0bf3b;
+    color: #f0bf3b !important;;
+}
+.signInLink{
+    color: #75DDDD !important;
 }

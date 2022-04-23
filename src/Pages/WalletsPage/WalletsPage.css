@@ -1,17 +1,13 @@
+.walletsPage{
+    height: 100vh;
+}
 .walletsPage-hd{
     width: fit-content;
     margin: auto;
     padding-top: 50px;
-    color: #3b3983;
+    color: white;
 }
 .addWallet-outline{
-    /* background-image: url('../NoWalletPage/wallet2.jpeg'); */
-    /* background-size: contain; */
-    /* border-radius: 10px;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 130px;
-    width: 250px; */
     opacity: 0.5;
     margin: 10px 0px;
     height: 250px;
@@ -20,10 +16,10 @@
     display: flex;
     align-items: center;
     font-size: 25px;
-    color: #3b3983;
+    color: white;
     flex-direction: column;
     justify-content: space-evenly;
-    border: 1px dashed #3b3983; 
+    border: 1px dashed white; 
 
 }
 .addWallet-outline:hover{

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import WalletForm from "../../Components/WalletForm/WalletForm";
-import wal from "./wallet_aym5.png";
+import wal from "./wallet_aym6.png";
 import "./NoWalletPage.css";
 import { useAuth } from "../../Context/AuthContext";
 import { useHistory } from "react-router-dom";
@@ -16,10 +16,6 @@ export default function NoWallet() {
         <div className="u-hv-no-wllt">
           <div className="wlc-sp"> Welcome to </div>
           <div className="wlc-sp2"> Budget Planner </div>
-          <h3 className="crt-head">
-            {" "}
-            Take control of your money and save them by tracking your expenses.
-          </h3>
           <button
             type="submit"
             onClick={() => currentUser ? setModal(true) : history.push('/sign-up') }
@@ -27,6 +23,7 @@ export default function NoWallet() {
           >
             Create Wallet
           </button>
+          
         </div>
 
         <div className="wallet-illus-cont">
@@ -37,13 +34,17 @@ export default function NoWallet() {
             className="wallet-illus"
           />{" "}
         </div>
-
+        
         <WalletForm
           show={modal}
           setShow={setModal}
           onHide={() => setModal(false)}
         />
       </div>
+      <h3 className="crt-head">
+            {" "}
+            Take control of your money and save them by tracking your expenses!
+          </h3>
     </div>
   );
 }

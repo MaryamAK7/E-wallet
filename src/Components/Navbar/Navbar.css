@@ -1,20 +1,17 @@
 .navBar {
-  /* background: #3b3983; */
-  /* color: rgba(0, 0, 0, 0.89); */
   padding: 10px 0px;
   height: 65px;
   z-index: 10;
-  border-bottom: 1px solid #f0bf3b ;
   margin: 0px 20px;
 }
 .home-btn {
   font-size: medium;
   margin: 15px 0px;
-  color: #3b3983;
+  color: white;
 }
 .btn-color {
   background: transparent;
-  color: #3b3983;
+  color: white;
   font-weight:600;
   width: 100px;
   height: 40px;
@@ -25,7 +22,7 @@
 }
 .btn-color-dis{
   background: transparent;
-  color: rgb(189, 190, 245);
+  color: rgba(255, 255, 255, 0.507);
   font-weight:600;
   width: 100px;
   height: 40px;

@@ -1,24 +1,27 @@
 .sign-in-form{
     width: 25%;
     margin: 50px auto;
-    color: #3b3983;
+    color: white;
 }
 .signIn-form-controle:focus{
     border-color: #f0bf3b;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px #f0bf3b;
 }
 .signIn-btn:focus{
-    border-color: #3b3983;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px #3b3983;
+    border-color: #004346;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px #004346;
 }
 .signIn-btn{
     background-color: #f0bf3b;
     border: none;
 }
 .signIn-btn:hover {
-    background-color: #3b3983;
+    background-color: #004346;
     border: none;
 }
 .forgotPassLink:hover , .signUpLink:hover{
-    color: #f0bf3b;
+    color: #f0bf3b !important;
+}
+.forgotPassLink, .signUpLink{
+    color: #75DDDD !important;
 }

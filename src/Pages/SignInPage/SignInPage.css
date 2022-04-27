@@ -1,5 +1,13 @@
 .signin-hd{
-    margin: 50px auto !important;
+    margin: 20px auto 50px !important;
     width: fit-content;
-    color: #3b3983;
+    color: white;
+  
+}
+.signInPage{
+    height: 90vh;
+}
+.signInIcon{
+    width: 50px;
+    margin-top: 10px;
 }

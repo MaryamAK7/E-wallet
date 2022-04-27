@@ -1,5 +1,12 @@
 .signup-hd{
-    margin: 50px auto !important;
+    margin: 20px auto !important;
     width: fit-content;
-    color: #3b3983;
+    color: white;
+}
+.signUpPage{
+    height: 100vh;
+}
+.signUpIcon{
+    width: 50px;
+    margin-top: 20px;
 }

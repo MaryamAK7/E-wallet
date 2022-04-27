@@ -13,7 +13,7 @@ import SignInPage from "./Pages/SignInPage/SignInPage";
 import ResetPassPage from "./Pages/ResetPassPage/ResetPassPage";
 import ProfilePage from "./Pages/ProfilePage/ProfilePage";
 import UpdateProfilePage from "./Pages/UpdateProfilePage/UpdateProfilePage";
-
+import './App.css';
 export default function App() {
   const { WalletList } = useContext(ListWalletContext);
   return (

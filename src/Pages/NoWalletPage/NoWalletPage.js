@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import WalletForm from "../../Components/WalletForm/WalletForm";
-// import wal from "./wallet_aym5.png";
+import wal from "./wallet_aym6.png";
 import "./NoWalletPage.css";
 import { useAuth } from "../../Context/AuthContext";
 import { useHistory } from "react-router-dom";
@@ -28,11 +28,11 @@ export default function NoWallet() {
 
         <div className="wallet-illus-cont">
           {" "}
-          {/* <img
+          <img
             src={wal}
             alt="wallet illustration"
             className="wallet-illus"
-          />{" "} */}
+          />{" "}
         </div>
         
         <WalletForm

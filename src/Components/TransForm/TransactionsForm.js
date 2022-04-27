@@ -11,7 +11,7 @@ function TransactionsForm() {
   const [amount, setAmount] = useState(0);
   const [noteTrans, setNoteTrans] = useState("");
   const [tagTrans, setTagTrans] = useState("");
-  const [type, setType] = useState();
+  const [type, setType] = useState("");
   const [trans, setTrans] = useState(chosenWallet.transactions);
   let am = 0;
   let id = 0;
@@ -73,9 +73,9 @@ function TransactionsForm() {
     setAmount(0);
     setNoteTrans("");
     setTagTrans("");
+    
   };
 
-  
   return (
     <>
       <div className="single-wallet-name">
@@ -94,7 +94,7 @@ function TransactionsForm() {
             <div className="inline-input">
               <input
                 type="number"
-                className="trans-form-inputs trans-form-input-amount"
+                className="trans-form-inputs"
                 placeholder="Add Amount"
                 value={amount}
                 onChange={handleAmountInput}
@@ -102,26 +102,26 @@ function TransactionsForm() {
               />
               <div onChange={handleType} className="type-ctn">
                 <div className="btn-color exp-in ">
-                  {" "}
-                  <input type="radio" value="income" name="type" checked="checked" /> Income{" "}
-                </div>
-                <div className="btn-color exp-in">
-                  {" "}
                   <input
                     type="radio"
-                    value="expense"
+                    value="income"
                     name="type"
-                  /> Expense{" "}
+                  />{" "}
+                  Income{" "}
+                </div>
+                <div className="btn-color exp-in">
+                  <input type="radio" value="expense" name="type" /> Expense
                 </div>
               </div>
             </div>
             <div className="inline-input">
               <select
                 name="note"
-                className="trans-form-inputs trans-form-input-amount"
+                className="trans-form-inputs"
                 onChange={handleNoteTrans}
+                value = {noteTrans}
               >
-                <option value=""></option>
+                <option value="" disabled>Select a Note </option>
                 <option value="Salary">Salary</option>
                 <option value="Food">Food</option>
                 <option value="Fees">Fees</option>
@@ -131,7 +131,7 @@ function TransactionsForm() {
 
               <input
                 type="text"
-                className="trans-form-inputs trans-form-input-amount"
+                className="trans-form-inputs"
                 placeholder="Add Tags ( coma in between )"
                 value={tagTrans}
                 onChange={handleTagTrans}

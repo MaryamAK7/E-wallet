@@ -2,11 +2,11 @@
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
-  
+    
   }
   .trans-list{
     width: fit-content;
-    margin: auto;
+    margin: 10px auto;
   }
   .trans-item {
     height: 70px;
@@ -17,14 +17,14 @@
     align-items: center;
     padding: 0px 0px 0px 10px;
     justify-content: space-around;
-    border-bottom: 2px solid whitesmoke ;
+    background-color: #f0bf3b;
   }
   .trans-amount {
-    color: #3b3983;
+    color: white;
   }
   .tags-item , .trs-date{
     padding: 0px 2px 0px 2px;
-    color: #3b3983;
+    color: white;
     opacity: 0.8;
   }
   .tags-list{
@@ -49,6 +49,6 @@
   .note-trans-item-flex {
     display: flex;
     width: 700px;
-    border-bottom: 2px solid whitesmoke ;
+    /* border-bottom: 2px solid whitesmoke ; */
   }
   

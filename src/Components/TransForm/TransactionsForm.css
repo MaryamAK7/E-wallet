@@ -2,9 +2,11 @@
     height: max-content;
     width: 700px;
     border-radius: 20px;
-    color: whitesmoke;
+    background-color: white;
+    color: #004346;
     margin: auto;
     margin-top: 50px ;
+    border: 1px solid #00434673 ;
   }
   .type-ctn{
     display: flex;
@@ -18,18 +20,19 @@
   .inline-input {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 20px;
     
   }
   
   .trans-form-inputs {
     height: 48px;
     background: transparent;
-    border: none;
-    border: 1px solid gray;
+    border: 1px solid #004346;
     font-size: 18px;
     padding: 0px 0px 0px 10px;
     color: #004346;
+    width: 300px;
   }
   .trans-form-inputs:focus {
     outline: none;
@@ -37,28 +40,28 @@
     transition: 0.5s;
   }
   
-  .trans-form-input-amount {
-    width: 300px;
-  }
   .exp-in{
-    color: white;
+    color: #004346;
   }
 
   .btn-create-trans {
     width: max-content;
     padding: 15px;
     background: transparent;
-    border: 1px solid gray;
-    color: white;
+    border: 1px solid #004346;
+    color: #004346;
     font-size: 15px;
     margin-top: 20px;
   }
  
   .single-wallet-name{
-    color: white;
+    color: #004346;
     margin: auto;
     width: 50%;
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
+  }
+  .inline-input option {
+    color: #004346;
   }

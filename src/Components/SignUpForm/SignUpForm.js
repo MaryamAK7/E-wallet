@@ -13,6 +13,7 @@ export default function SignUpForm() {
   const [loading, setLoading] = useState(false);
   const { signUp } = useAuth();
   const history = useHistory();
+  
   async function handleSubmit(e) {
     e.preventDefault();
     if (userPass !== verifPass) {
@@ -44,7 +45,7 @@ export default function SignUpForm() {
             onChange={(e) => setUserEmail(e.target.value)}
             className = 'signUp-form-controle'
           />
-          <Form.Text className="text-muted">
+          <Form.Text className="noteText">
             We'll never share your email with anyone else.
           </Form.Text>
         </Form.Group>
@@ -57,8 +58,11 @@ export default function SignUpForm() {
             onChange={(e) => setUserPass(e.target.value)}
             className = 'signUp-form-controle'
           />
+           <Form.Text className="noteText">
+            Password must be at least 6 characters.
+          </Form.Text>
         </Form.Group>
-        <Form.Group controlId="formBasicPassword">
+        <Form.Group controlId="formBasicConfPassword">
           <Form.Label>Confirm Password</Form.Label>
           <Form.Control
             type="password"

@@ -24,9 +24,9 @@ export default function LogOutPage() {
       <div> <img src={user} alt='' className="profileIcon"/></div>
       <h1 className="profile-hd">Profile</h1>
       {error && <Alert>{error}</Alert>}
-      <div>
-        <strong> Email logged In :</strong>{" "}
-        <span>{currentUser && currentUser.email}</span>
+      <div >
+        <strong className="my-2"> Email logged In :</strong>{" "}
+        <div className="my-2 fontSize">{currentUser && currentUser.email}</div>
       </div>
       <Link to="/update-profile" className="profileLink">
         {" "}
@@ -34,13 +34,13 @@ export default function LogOutPage() {
       </Link>
       <div className="profileBtns">
         <div className="checkBtnDiv">
-          Check Your wallets{" "}
-          <Button
+          Check Your wallets {" "}
+          <span
             onClick={() => history.push("/wallets/")}
             className="checkBtn"
           >
-            Check!
-          </Button>
+            take me there!
+          </span>
         </div>
         <Button onClick={handleClick} className="logOut-btn">
           Sign Out

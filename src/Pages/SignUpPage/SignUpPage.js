@@ -1,7 +1,7 @@
 import React from 'react'
 import SignUpForm from '../../Components/SignUpForm/SignUpForm'
 import './SignUpPage.css'
-import logout from './log-out.png';
+import logout from './account.png';
 
 export default function SignUpPage() {
     return (

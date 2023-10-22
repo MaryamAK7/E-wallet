@@ -39,14 +39,21 @@
     margin: 20px auto;
 }
 .checkBtn{
-    background-color: #f0bf3b;
+    /* background-color: #f0bf3b;
     border: none;
-    margin-left: 20px;
+    margin-left: 20px; */
+    padding: 5px;
+    color: #f0bf3b;
 }
 .checkBtn:hover {
     background-color: #004346;
     border: none;
+    cursor: pointer;
 }
 .profileIcon{
     width: 50px;
+}
+
+.fontSize{
+    font-size: 1.5rem;
 }

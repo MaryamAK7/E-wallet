@@ -67,7 +67,7 @@ export default function WalletForm({ show, setShow, onHide }) {
               <tr>
                 <td>
                   <span className="label-crte-wlt">
-                    <label for="name">Name </label>
+                    <label htmlFor="name">Name </label>
                   </span>
                 </td>
                 <td>
@@ -86,7 +86,7 @@ export default function WalletForm({ show, setShow, onHide }) {
               <tr>
                 <td>
                   <span className="label-crte-wlt">
-                    <label for="balance">Starting Balance </label>
+                    <label htmlFor="balance">Starting Balance </label>
                   </span>
                 </td>
                 <td>

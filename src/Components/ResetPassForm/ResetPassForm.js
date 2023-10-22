@@ -3,7 +3,7 @@ import { Form, Button } from "react-bootstrap";
 import { useAuth } from "../../Context/AuthContext.js";
 import Alert from "react-bootstrap/Alert";
 import "./ResetPassForm.css";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export default function ResetPassForm() {
   const [error, setError] = useState();
@@ -33,17 +33,33 @@ export default function ResetPassForm() {
         {message && <Alert variant="success">{message}</Alert>}
         <Form.Group controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" ref={emailRef} className ='resetPass-form-control' />
+          <Form.Control
+            type="email"
+            placeholder="Enter email"
+            ref={emailRef}
+            className="resetPass-form-control"
+          />
         </Form.Group>
-        <Button variant="primary" type="submit" disabled={loading} className = 'resetPassBtn'>
-          Reset Password
-        </Button>
+        <div className="my-4">
+          <Button
+            variant="primary"
+            type="submit"
+            disabled={loading}
+            className="resetPassBtn"
+          >
+            Reset Password
+          </Button>
+          <Link to="/sign-in" className="resetLink mx-1">
+            {" "}
+            Cancel{" "}
+          </Link>{" "}
+        </div>
       </Form>
-      <div>
-        <Link to="/sign-in" className='resetLink'> Sign in </Link>{" "}
-      </div>
-      <div>
-        Need an account? <Link to="/sign-up" className='resetLink'>Sign up </Link>
+      <div className="my-4">
+        Need an account?{" "}
+        <Link to="/sign-up" className="resetLink">
+          Sign up{" "}
+        </Link>
       </div>
     </div>
   );
